@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Title for browser tab -->
+  <title>Match Game</title>
+
+  <!-- Meta tag for mobile adjustment -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link href="./resources/images/favicon.ico" rel="icon" type="image/x-icon">
+
+  <!-- Load CSS Files: Bootstrap, Main Style -->
+  <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
+  <link href="./resources/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+  <section id="match-game">
+    <div class="container">
+      <div class="row">
+        <div id="instructions" class="col-md-3 col-sm-12">
+          <h2>Match Game</h2>
+          <h6>Rules</h6>
+          <p>Click on a card to reveal the number on the other side.
+            Click on a second card to try and find a match to the first.
+            If you succeed, the pair will be removed from play. If not, try again!
+          </p>
+
+          <h6>How To Win</h6>
+          <p>You win when all pairs have been found.</p>
+
+          <div id="timer">
+            <h6>Timer</h6>
+            <p class="time">00:00</p>
+          </div>
+        </div>
+
+        <div id="game" class="col-md-9 col-sm-12">
+          <div class="row">
+
+            <!--&lt;!&ndash; Card #1&ndash;&gt;-->
+            <!--<div class="col-xs-3 card" id="card1">-->
+              <!--&lt;!&ndash;<span class="front-card">1</span>&ndash;&gt;-->
+            <!--</div>-->
+
+            <!--&lt;!&ndash; Card #2&ndash;&gt;-->
+            <!--<div class="col-xs-3 card">-->
+
+            <!--</div>-->
+
+            <!--&lt;!&ndash; Card #3&ndash;&gt;-->
+            <!--<div class="col-xs-3 card">-->
+
+            <!--</div>-->
+
+            <!--&lt;!&ndash; Card #4&ndash;&gt;-->
+            <!--<div class="col-xs-3 card">-->
+
+            <!--</div>-->
+
+
+            <!--&lt;!&ndash; Card #5&ndash;&gt;-->
+            <!--<div class="col-xs-3 card">-->
+
+            <!--</div>-->
+
+            <!--&lt;!&ndash; Card #6&ndash;&gt;-->
+            <!--<div class="col-xs-3 card">-->
+
+            <!--</div>-->
+
+            <!--&lt;!&ndash; Card #7&ndash;&gt;-->
+            <!--<div class="col-xs-3 card">-->
+
+            <!--</div>-->
+
+            <!--&lt;!&ndash; Card #8&ndash;&gt;-->
+            <!--<div class="col-xs-3 card">-->
+
+            <!--</div>-->
+
+            <!--&lt;!&ndash; Card #9&ndash;&gt;-->
+            <!--<div class="col-xs-3 card">-->
+
+            <!--</div>-->
+
+            <!--&lt;!&ndash; Card #10&ndash;&gt;-->
+            <!--<div class="col-xs-3 card">-->
+
+            <!--</div>-->
+
+            <!--&lt;!&ndash; Card #11&ndash;&gt;-->
+            <!--<div class="col-xs-3 card">-->
+
+            <!--</div>-->
+
+            <!--&lt;!&ndash; Card #12&ndash;&gt;-->
+            <!--<div class="col-xs-3 card">-->
+
+            <!--</div>-->
+
+            <!--&lt;!&ndash; Card #13&ndash;&gt;-->
+            <!--<div class="col-xs-3 card">-->
+
+            <!--</div>-->
+
+            <!--&lt;!&ndash; Card #14&ndash;&gt;-->
+            <!--<div class="col-xs-3 card">-->
+
+            <!--</div>-->
+
+            <!--&lt;!&ndash; Card #15&ndash;&gt;-->
+            <!--<div class="col-xs-3 card">-->
+
+            <!--</div>-->
+
+            <!--&lt;!&ndash; Card #16&ndash;&gt;-->
+            <!--<div class="col-xs-3 card">-->
+
+            <!--</div>-->
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="game-over">
+    <div class="popup" data-popup="popup-1">
+      <div class="popup-inner">
+        <h2>You Win!</h2>
+        <p id="thanks">Thank you very much for playing <br>The "Match Game - Arcade Mode" ! :-) </p>
+        <p id="link-play-again"><a data-popup-close="popup-1" href="#">Play Again</a></p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Load Javascripts Files: Bootstrap, jQuery, BL and Tests -->
+  <script src="./resources/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="./resources/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="./resources/js/jquery.flip.min.js" type="text/javascript"></script>
+  <script src="./resources/js/random.js" type="text/javascript"></script>
+  <script src="./resources/js/match-game.js" type="text/javascript"></script>
+  <script src="./resources/js/tests.js" type="text/javascript"></script>
+</body>
+</html>

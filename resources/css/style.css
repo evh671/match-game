@@ -1,0 +1,185 @@
+/**************************************************
+
+                GENERALIZATION
+
+ **************************************************/
+
+
+html, body {
+    font-size:14px;
+    font-family: "Work Sans",sans-serif;
+    background-color: rgb(255,242,242);
+}
+
+
+/**************************************************
+
+                GAME INSTRUCTIONS
+
+ **************************************************/
+
+
+#match-game {
+    margin-top: 5.25rem;
+}
+
+#instructions h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(32,64,68);
+}
+
+#instructions h6 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#instructions p {
+    color: rgb(74,74,74);
+}
+
+#instructions #timer h6{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+
+#instructions #timer .time {
+    font-size: 1.5rem;
+    margin-left: 4px;
+}
+
+
+/**************************************************
+
+                   GAME CARD
+
+ **************************************************/
+
+
+#game .card {
+    width: 12.5rem;
+    height: 12.5rem;
+    background-color: rgb(32,64,86);
+    font-weight: 900;
+    font-size:7rem;
+    margin: 0.5rem;
+    border-radius: 0.4rem;
+    text-align: center;
+
+}
+
+#game .card:hover {
+    cursor: pointer;
+}
+
+#game .card .front-card {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 1rem;
+}
+
+
+/*#game #card1 {*/
+    /*color: rgb(255,255,255);*/
+    /*background-color: hsl(25,85%,65%);*/
+/*}*/
+
+/**************************************************
+
+                POP-UP MODAL
+
+ **************************************************/
+
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+}
+
+/* Inner */
+.popup-inner {
+    max-width:700px;
+    width:90%;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background: #fff2f2;
+    text-align: center;
+}
+
+.popup-inner h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(32,64,68);
+    margin-top: 0;
+}
+
+.popup-inner #thanks {
+    padding: 1rem;
+    color: rgb(32,64,68);
+    font-size: 1.25rem;
+}
+
+.popup-inner #link-play-again {
+    margin-bottom: 0;
+    margin-top: 2rem;
+    padding: 0;
+}
+
+
+.popup-inner a {
+    /*padding: 1rem;*/
+    /*color: rgb(32,64,68);*/
+    /*font-size: 1.25rem;*/
+    font-family: 'Indie Flower', cursive;
+    font-size:3rem;
+    transition: color 0.3s linear;
+}
+
+
+.popup-inner a:hover {
+    text-decoration: none;
+    color: #2A17A1;
+}
+
+.popup-inner a:active {
+    text-decoration: none;
+}
+
+
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(0,0,0,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}
